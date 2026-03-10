@@ -1,0 +1,30 @@
+%%%% Better Poster latex template example v1.0 (2019/04/04)
+%%%% GNU General Public License v3.0
+%%%% Rafael Bailo
+%%%% https://github.com/rafaelbailo/betterposter-latex-template
+%%%%
+%%%% Original design from Mike Morrison
+%%%% https://twitter.com/mikemorrison
+
+\documentclass[poster, fleqn]{betterposter}
+\usepackage[colorlinks=true, urlcolor=white, citecolor=black]{hyperref} %% hyperlinks
+\usepackage{setspace} %% for line spacing control
+\usepackage{multicol} %% multiple columns for references
+\usepackage{pgf} %% for drawing vector graphics
+\usepackage[most]{tcolorbox} %% colored boxes throughout
+
+% Geometry specifications, definitions for shorthand commands,
+\input{commands.tex}
+
+\begin{document}
+    \betterposter{
+        % Center column content
+        \input{center-column.tex}
+    }{
+        % Left column content
+        \input{left-column.tex}
+    }{
+        % Right column content
+        \input{right-column.tex}
+    }
+\end{document}

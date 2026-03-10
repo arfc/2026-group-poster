@@ -1,0 +1,92 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Setting column widths/margins %%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Left column width
+    \setlength{\leftbarwidth}{0.3\paperwidth}
+
+    % Right column width
+    \setlength{\rightbarwidth}{0.3\paperwidth}
+
+    % L/R Horizontal margin 
+    \setlength{\columnmarginvertical}{0.02\paperheight}
+
+    % L/R Vertical margin
+    \setlength{\columnmarginhorizontal}{0.02\paperheight}
+
+    % Horizontal margin for the main column
+    \setlength{\maincolumnmarginvertical}{0.02\paperheight}
+
+    % Vertical margin for the main column
+    \setlength{\maincolumnmarginhorizontal}{0.02\paperheight}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Background color for the main column
+\renewcommand{\maincolumnbackgroundcolor}{uiucindustrial}
+
+%% Shorthand for figure captions
+\newcommand{\figcaption}[1]
+{
+    \setstretch{1.0}
+    \textcolor{gray}{\fontsizestandard\newline #1}
+}
+
+%% Shorthand for section titles
+\newcommand{\sectiontitle}[1]
+{
+    \vspace{1em}
+    \centering
+    {\fontsizetitle \textbf{#1}}
+    \par\vspace{-0.5em}
+    \rule{\textwidth}{5pt}
+    \newline
+    \vspace{-2em}
+}
+
+%% Shorthand for section content
+\newcommand{\sectioncontent}[1]
+{
+    \begin{center}
+        \fontsizesection
+        #1
+    \end{center}
+}
+
+%% Shorthand for research area titles, slightly different from section titles
+\newcommand{\researcharea}[1]
+{
+    \singlespacing 
+    \vspace{0.5em}
+    \centering
+    {\fontsizetitle \textbf{#1}}
+    \par\vspace{1em}
+    \rule{\textwidth}{5pt}
+    \newline
+}
+
+%% Shorthand for code logo header block, for whatever reason this was way more 
+%% complicated than the other headers...
+\newcommand{\codelogoheader}[1]
+{
+    \textcolor{black}{
+        \newline
+        \vspace{-3em}
+        \begin{center}
+            {\fontsizetitle \textbf{#1}}
+        \end{center}
+        \vspace{-1.5em}
+        \rule{\textwidth}{5pt}
+        \newline
+        \vspace{-1.5em}
+    }
+}
+
+%% Shorthand for references title
+\newcommand{\referencestitle}[1]
+{
+    \centering\vspace{0.25em}
+    {\fontsizetitle \textbf{#1}}
+    \par\vspace{-1.5em}
+    \rule{\textwidth}{5pt}
+    \newline
+    \vspace{-3.25em}
+}
