@@ -54,22 +54,23 @@
     %%%%%%%%% Luke's %%%%%%%%%%
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{tcolorbox}[colback=white, colframe=black, width=\textwidth, arc=6pt, boxrule=1pt]
-        \sectiontitle{Delayed Neutron Precursor Drift}
+        \sectiontitle{Delayed Neutron Precursor Modeling}
         \sectioncontent{
-            Which precursors drive uncertainty in the kinetics parameters?
+	    Delayed neutron precursor experimental data is continuously being improved such that existing six group structures can be replicated computationally.
+	    This approach can be leveraged to capture the effects of nuclear data uncertainties and advanced reactor phenomena. 
 
             \begin{minipage}{.45\textwidth}
                 \vspace{1em}
-                \includegraphics[width = 1.1\textwidth]{img/luke1.png}
-                \newline
-                \figcaption{check if luke wants to use this}
+                \includegraphics[width = 1\linewidth]{img/luke1.png}
+		    \figcaption{The delayed neutron count rate for thermal fission of $^{235}$U normalized to the Keepin et al. six-group DNP group parameters \cite{keepin_delayed_1957}. The current work, represented by the Sampled, Group Fit, and Mean data trends shows poor agreement at times less than one second and agreement within uncertainty bounds beyond three seconds. These data are calculated using the IAEA $\beta$-delayed neutron emission database alongside ENDF/B-VII.1 cumulative fission yields \cite{dimitriou_development_2021, chadwick_endf_2011}.}
             \end{minipage}
             \hspace{1cm}
             \begin{minipage}{.45\textwidth}
                 \vspace{1em}
-                \includegraphics[width = 0.8\textwidth]{img/luke_seifert_1.png}
-                \newline
-                \figcaption{}
+		    \begin{center}
+		    \includegraphics[height=12cm, width = 0.9\linewidth]{img/luke_seifert_1.png}
+		    \end{center}
+		    \figcaption{This is a qualitative visualization of the delayed neutron yields represented as embers from a fire. The yield data is plotted over atomic mass and the natural log of the half-life using the IAEA $\beta$-delayed neutron emission data and ENDF/B-VII.1 cumulative fission yields \cite{dimitriou_development_2021, chadwick_endf_2011}. The brightness of each ember indicates its delayed neutron yield during thermal fission of $^{235}$U, while the radius represents its uncertainty.}
             \end{minipage}
         }
     \end{tcolorbox}
