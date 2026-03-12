@@ -13,30 +13,6 @@
 	file = {2022-chee-dissertation-pres.pdf:/home/zoe/Zotero/storage/Y93FYTHR/2022-chee-dissertation-pres.pdf:application/pdf;Chee - 2021 - Fluoride-Salt-Cooled High Temperature Reactor Desi.pdf:/home/zoe/Zotero/storage/EXF7M46A/Chee - 2021 - Fluoride-Salt-Cooled High Temperature Reactor Desi.pdf:application/pdf},
 }
 
-@phdthesis{bachmann,
-	type = {Doctoral {Dissertation}},
-	title = {Investigation of the impacts of deploying reactors fueled by high-assay low enriched uranium},
-	copyright = {Copyright by Amanda M. Bachmann. All rights reserved.},
-	url = {https://hdl.handle.net/2142/121987},
-	abstract = {The United States is considering the deployment of advanced reactors that require uranium enriched between 5-20\% 235U, often referred to as High Assay Low Enriched Uranium (HALEU). At the present, there are no commercial facilities in the US to produce HALEU, prompting questions of how to create a dependable supply chain of HALEU to support these reactors. HALEU can be produced through two primary methods: downblending High Enriched Uranium (HEU) and enriching natural uranium. The amount of HEU available and impurities present in the HEU limit downblending capabilities. The Separative Work Unit (SWU) capacity and amount of natural uranium available limit enriching natural uranium capabilities. To understand the resources necessary to commercially produce HALEU with each of these methods, one can quantify the material requirements of transitioning to HALEU-fueled reactors. 
-
-In this dissertation, we model the transition from Light Water Reactors to different advanced reactors, considering once-through and closed fuel cycles to determine material requirements for supporting these fuel cycles. Material requirements of interest across this work include the mass of enriched uranium, mass of HALEU, feed uranium, SWU capacity, and the mass of used fuel sent for disposal. We use CYCLUS and publicly-available information about Light Water Reactors, the X-energy Xe-100, the Ultra Safe Nuclear Corporation Micro Modular Reactor, and the NuScale VOYGR to model potential transition scenarios and demonstrate the methodologies developed in this work. To more accurately model the closed fuel cycles, we develop a new CYCLUS archetype, called OpenMCyclus, that couples with OpenMC to dynamically model fuel depletion in a reactor and provide more accurate used fuel compositions. The results of this transition analysis show how the characteristics of the advanced reactors deployed drive the materials required to support the fuel cycle. Closing the fuel cycle reduces the materials required, but the reduction in materials is driven by the amount of material available for reprocessing. 
-
-To gain more insight into how transition parameters not considered in the transition analysis affect material requirements, we perform sensitivity analysis on one of the once-through transitions by coupling CYCLUS with Dakota. The results of the sensitivity analysis highlight some of the trade-offs between different reactor designs. One such tradeoff is the increased HALEU demand but decreased used fuel discharged when increasing the Xe-100 deployment and decreasing the VOYGR deployment. Additionally, these results identify the Xe-100 discharge burnup as consistently being one of the most impactful input parameters for this transition, because of how the deployment scheme in this work affects the number of Xe-100s built no matter which advanced reactor build share is specified.
-
-To identify potential transitions that minimize material requirements, we then use the CYCLUS-Dakota to optimize a once-through transition using the genetic algorithms in Dakota. In single-objective problems to minimize the SWU capacity required to produce HALEU and minimize the amount of used nuclear fuel, the algorithm finds solutions that are consistent with the results of the sensitivity analysis. The results cannot be taken at face value, because the algorithm did not fully converge and the genetic algorithms do not enforce the applied linear constraint for the advanced reactor build shares to sum to 100\%. However, the results provide guidance on how to adjust the input parameters to optimize the transition for a minimal HALEU SWU or the used fuel mass. Parameter adjustments include maximizing the number of Light Water Reactors that receive license extensions to operate for 80 years. Similar results occur when using this method for a multi-objective problem to minimize both the HALEU SWU capacity and the used fuel mass. 
-
-Finally, we use neutronics models of the Xe-100 and Micro Modular Reactor reactor designs to evaluate the steady-state reactor physics performance of downblended HEU in these two designs. We compare the performance of the downblended HEU to nominally enriched fuel, based on the k-eff, βeff, energy- and spatially-dependent neutron fluxes, as well as the fuel, moderator, coolant, and total reactivity temperature feedback coefficients. The differences in the fuel compositions leads to differences in each of the metrics. However, these differences are within error of the results of the nominally enriched fuel, or would not prevent the reactor from meeting stated design specifications or operating in a safe state.
-
-The work completed in this dissertation develops and demonstrates a methodology for modeling fuel cycle transitions and understanding the effects of deploying HALEU-fueled reactors in the US. The effects investigated in these example scenarios include various materials and resources required to support these reactors, and how the parameters of the transition affect these requirements. The information generated from this new methodology can be used to develop the necessary infrastructure and supply chains for support a transition to HALEU-fueled reactors. Furthermore, this work explores how the HALEU production method (enriching compared with downblending) affects reactor performance.},
-	urldate = {2024-06-03},
-	school = {University of Illinois at Urbana-Champaign},
-	author = {Bachmann, Amanda M.},
-	month = nov,
-	year = {2023},
-	file = {Full Text PDF:/home/zoe/Zotero/storage/K29LT23L/Bachmann - 2023 - Investigation of the impacts of deploying reactors.pdf:application/pdf},
-}
-
 @techreport{richter,
 	address = {Oak Ridge, TN},
 	type = {Technical {Report}},
@@ -50,17 +26,35 @@ The work completed in this dissertation develops and demonstrates a methodology 
 	file = {Richter et al. - 2023 - MODELING AND SIMULATION OF AN XE-100 TYPE PEBBLE B.pdf:/home/zoe/Zotero/storage/WURLT2HF/Richter et al. - 2023 - MODELING AND SIMULATION OF AN XE-100 TYPE PEBBLE B.pdf:application/pdf},
 }
 
-@phdthesis{park,
-	address = {Urbana, IL},
-	type = {{PhD} {Dissertation}},
-	title = {Advancements in {Moltres} for {Time}-{Dependent} {Multiphysics} {Molten} {Salt} {Reactor} {Modeling}},
-	copyright = {Copyright 2025 Sun Myung Park},
-	abstract = {Molten Salt Reactors (MSRs) are advanced reactors noted for strong passive safety features. They present unique challenges in multiphysics reactor modeling \& simulation arising from strong temperature reactivity feedback, delayed neutron precursor flow, and turbulent heat transport in fuel salt regions. Simulating the complex multiphysics interactions in MSRs requires robust, flexible, and highly scalable multiphysics software. Many MSR designs also still retain control rods which can complicate time-dependent reactivity-initiated transient simulations on reactor software relying on neutron diffusion theory. This work builds on existing capabilities in Moltres, a MOOSE-based MSR simulation software, to address these challenges and support efforts towards MSR deployment.
-This work verified and validated existing multiphysics coupling capabilities in Moltres in two comparative studies. In both studies, Moltres showed good agreement with other MSR simulation tools involving coupled neutronics and thermal-hydraulics problems. This work also introduces a turbulence model in Moltres to support future MSR analyses involving turbulent delayed neutron precursor and temperature transport. Lastly, this work introduces a novel hybrid SN-diffusion method for accurate control rod modeling in time-dependent MSR simulations. The hybrid method combines the strengths of both approaches by generating transport corrections using the SN method near control rods. The SN and neutron diffusion solvers are coupled through an adaptive boundary coupling algorithm. This algorithm allows the solver to adapt to the transport correction parameters and preserve smooth neutron flux gradients across the interface. In 1-D, 2-D, and 3-D k-eigenvalue simulations, the hybrid method produced accurate control rod worth estimates, relative to reference neutron transport solutions and experimental data, at approximately four times the computational cost of the neutron diffusion method. The hybrid method also performed well in a time-dependent rod drop simulation by reproducing expected trends observed in experimental data. Analysis of its computational performance indicated the possibility of further optimizations beyond its current implementation. With the hybrid methods spatial resolution and efficient computational performance, Moltres could enable accurate and cost-effective simulations of asymmetric transients in MSRs.},
-	language = {English},
-	school = {University of Illinois Urbana-Champaign},
-	author = {Park, Sun Myung},
-	month = jan,
+@article{trammRandomRayMethod2017a,
+	title = {The {Random} {Ray} {Method} for neutral particle transport},
+	volume = {342},
+	issn = {0021-9991},
+	doi = {10.1016/j.jcp.2017.04.038},
+	abstract = {A new approach to solving partial differential equations (PDEs) based on the method of characteristics (MOC) is presented. The Random Ray Method (TRRM) uses a stochastic rather than deterministic discretization of characteristic tracks to integrate the phase space of a problem. TRRM is potentially applicable in a number of transport simulation fields where long characteristic methods are used, such as neutron transport and gamma ray transport in reactor physics as well as radiative transfer in astrophysics. In this study, TRRM is developed and then tested on a series of exemplar reactor physics benchmark problems. The results show extreme improvements in memory efficiency compared to deterministic MOC methods, while also reducing algorithmic complexity, allowing for a sparser computational grid to be used while maintaining accuracy.},
+	urldate = {2025-11-05},
+	journal = {Journal of Computational Physics},
+	author = {Tramm, John R. and Smith, Kord S. and Forget, Benoit and Siegel, Andrew R.},
+	month = aug,
+	year = {2017},
+	keywords = {Neutron transport, Method of characteristics, High performance computing, Reactor simulation, Stochastic methods},
+	pages = {229--252},
+	file = {Tramm et al. - 2017 - The Random Ray Method for neutral particle transport:/Users/summer/Zotero/storage/77UIRCVE/Tramm et al. - 2017 - The Random Ray Method for neutral particle transport.pdf:application/pdf},
+}
+
+@inproceedings{fang_einstein_2025,
+	title = {{EINSTEIN}: enhanced integrated nuclear systems for transmutation and efficient isolation of nuclides},
+	volume = {13621},
+	shorttitle = {{EINSTEIN}},
+	url = {https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13621/136210G/EINSTEIN--enhanced-integrated-nuclear-systems-for-transmutation-and-efficient/10.1117/12.3067982.full},
+	doi = {10.1117/12.3067982},
+	abstract = {Transmutation systems based on different drivers and targets (XDS facilities) have been proposed to reduce the radiotoxicity of used nuclear fuel (UNF). We are developing a Techno-Economic Analysis framework informed by a dynamic data library integrated with a large-scale system simulator for rapidly evaluating and comparing various transmutation technologies. We will conduct experimental campaigns to measure a prioritized list of quantities including key reactions and fission yields to fill the gaps in experimental data. Among the data of interest, we simulated the measurement of $^{\textrm{19}}$F(n,n’γ) reaction cross section with an HPGe detector and demonstrated it is feasible to obtain a \&lt;1\% uncertainty with a measurement time of 1 hour. Ultimately, we aim to provide a detailed assessment of viable technologies at all UNF transmutation stages and their associated cost basis to inform future commercial applications.},
+	urldate = {2025-10-21},
+	booktitle = {Hard {X}-{Ray}, {Gamma}-{Ray}, and {Neutron} {Detector} {Physics} {XXVII}},
+	publisher = {SPIE},
+	author = {Fang, Ming and Huff, Kathryn and Kozlowski, Tomasz and Stubbins, James F. and Vergari, Lorenzo and Fulvio, Angela Di},
+	month = sep,
 	year = {2025},
-	file = {Park - 2025 - Advancements in Moltres for Time-Dependent Multiph.pdf:/home/zoe/Zotero/storage/5AKNLVP7/Park - 2025 - Advancements in Moltres for Time-Dependent Multiph.pdf:application/pdf},
+	pages = {128--133},
+	file = {Full Text PDF:/Users/katyhuff/Zotero/storage/GJTX7EXG/Fang et al. - 2025 - EINSTEIN enhanced integrated nuclear systems for transmutation and efficient isolation of nuclides.pdf:application/pdf},
 }
