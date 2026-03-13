@@ -11,67 +11,68 @@
             \vspace{1em}
 
             \includegraphics[width = 0.9\textwidth]{img/samar1.png}
+            \vspace{1em}
             \figcaption{ARPAE EINSTEIN project \cite{fang_einstein_2025}.}
         }
     \end{tcolorbox}
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    %%%%%%%%%% Liam's %%%%%%%%%%
+    %%%%%%%%%%%%% OLEK'S + Eli's%%%%%%%%%%%%%
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{tcolorbox}[colback=white, colframe=black, width=\textwidth, arc=6pt, boxrule=1pt]
-        \sectiontitle{RCANA}
+        \sectiontitle{Advanced Transport Methods}
         \sectioncontent{
-            How can method of characteristics and computer graphics be implemented together to improve neutron transport?
-            \par\vspace{1em}
+            Developing a time-dependent FW-CADIS method using the Time-Dependent Random Ray approach to improve
+            variance reduction in transient Monte Carlo simulations.\\
+            Modeling neutron noise signals in MSRs, and determining if relevant reactor properties can be determined with enough precision
+            from these signals to reliably detect diversion scenarios.
+            \vspace{1em}
 
-           \begin{minipage}{.3\textwidth}
-                \vspace{1em}
-                \includegraphics[width = \textwidth]{img/liam1.png}
-                \newline
-                \figcaption{
-                    Method of Characteristics ray laydown example.
-                }
+            \begin{center}
+
+            \begin{minipage}{.32\textwidth}
+                \includegraphics[height=9.5cm, width=1.05\textwidth]{img/no_ww_mc_ru.png}
+            \end{minipage}\hspace{0.05cm}
+            \begin{minipage}{.32\textwidth}
+                \includegraphics[height=9.5cm, width=1.05\textwidth]{img/ww_base_mc_ru.png}
+            \end{minipage}\hspace{0.05cm}
+            \begin{minipage}{.32\textwidth}
+                \includegraphics[height=9.5cm,width=1.05\textwidth]{img/ww_with_fission_mc_ru.png}
             \end{minipage}
-            \hspace{0.5cm}
-            \begin{minipage}{.3\textwidth}
-                \vspace{1em}
-                \includegraphics[width = \textwidth]{img/liam2.png}
-                \newline
-                \figcaption{
-                    Random Ray laydown example \cite{trammRandomRayMethod2017a}.
-                }
-            \end{minipage}
-            \hspace{0.5cm}
-            \begin{minipage}{.3\textwidth}
-                \vspace{1em}
-                \includegraphics[width = \textwidth]{img/liam3.png}
-                \newline
-                \figcaption{
-                    Future Innovations forthcoming.
-                }
-            \end{minipage}
+            \vspace{1em}
+
+            \figcaption{Comparison of automatically generated weight windows using three different importance functions in a 2D quarter-core PWR Monte Carlo eigenvalue simulation.}
+
+            \end{center}
+
         }
     \end{tcolorbox}
 
 
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    %%%%%%%%%%%%% HALEU %%%%%%%%%%%%%
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%% Luke's %%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{tcolorbox}[colback=white, colframe=black, width=\textwidth, arc=6pt, boxrule=1pt]
-        \sectiontitle{HALEU Studies}
+        \sectiontitle{Delayed Neutron Precursor Modeling}
         \sectioncontent{
-            Investigating how uranium impurities in downblended highly enriched uranium (HEU) affect the performance and safety of high-temperature gas-cooled reactors (HTGRs).\\
-            High-fidelity depletion simulations evaluate the impact of recycled fuel sources such as EBR-II and Y-12 on reactor behavior.
-            
+	    Delayed neutron precursor experimental data is continuously being improved such that existing six group structures can be replicated computationally.
+	    This approach can be leveraged to capture the effects of nuclear data uncertainties and advanced reactor phenomena. 
 
-            \includegraphics[width = 1.0\textwidth]{img/haleu.png}
-            \newline
-            \figcaption{
-                Radial and axial thermal flux in the MMR-like reactor.
-            }
+            \begin{minipage}{.45\textwidth}
+                \vspace{1em}
+                \includegraphics[width = 1.1\linewidth]{img/luke1.png}
+                \vspace{0.5em}
+		    \figcaption{The delayed neutron count rate for thermal fission of $^{235}$U normalized to the Keepin et al. six-group DNP group parameters \cite{keepin_delayed_1957}.} %The current work, represented by the Sampled, Group Fit, and Mean data trends shows poor agreement at times less than one second and agreement within uncertainty bounds beyond three seconds. These data are calculated using the IAEA $\beta$-delayed neutron emission database alongside ENDF/B-VII.1 cumulative fission yields \cite{dimitriou_development_2021, chadwick_endf_2011}.
+            \end{minipage}
+            \hspace{1cm}
+            \begin{minipage}{.45\textwidth}
+                \vspace{1em}
+		    \begin{center}
+		    \includegraphics[height=12cm, width = 0.8\linewidth]{img/luke_seifert_1.png}
+		    \end{center}
+		    \figcaption{Artistic visualization of the delayed neutron yields represented as embers from a fire.}  %The yield data is plotted over atomic mass and the natural log of the half-life using the IAEA $\beta$-delayed neutron emission data and ENDF/B-VII.1 cumulative fission yields \cite{dimitriou_development_2021, chadwick_endf_2011}. The brightness of each ember indicates its delayed neutron yield during thermal fission of $^{235}$U, while the radius represents its uncertainty.
+            \end{minipage}
         }
     \end{tcolorbox}
-
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{center}
